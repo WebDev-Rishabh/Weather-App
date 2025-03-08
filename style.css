@@ -6,3 +6,60 @@ body {
     padding: 0;
 }
 
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+.weather-box {
+    background: #e0f2fe;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.forecast-container {
+    margin-top: 20px;
+}
+
+.forecast-container.hidden {
+    display: none;
+}
+
+.forecast-card {
+    display: inline-block;
+    background: #94a3b8;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+}
