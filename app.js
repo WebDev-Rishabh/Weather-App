@@ -60,6 +60,7 @@ function displayForecast(data) {
             <p>Temp: ${forecast.main.temp}°C</p>
             <p>Wind: ${forecast.wind.speed} M/S</p>
             <p>Humidity: ${forecast.main.humidity}%</p>
+            <p>AQI: ${data.main.aqi}%</p>
            `;
         forecastCards.appendChild(forecastCard);
     });
