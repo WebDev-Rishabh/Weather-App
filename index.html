@@ -9,20 +9,33 @@
 <body>
     <div class="container">
         <h1>Weather Dashboard</h1>
+
+        <!-- Search Section -->
         <div class="search-container">
             <label for="city">Enter a City Name</label>
             <input type="text" id="city" placeholder="E.g., New York, London, Tokyo">
             <button onclick="fetchWeather()">Search</button>
             <button onclick="getCurrentLocation()">Use Current Location</button>
+
+            <!-- Recently Searched Dropdown (Initially Hidden) -->
+            <div id="recent-search-container" class="hidden">
+                <label for="recent-search">Recently Searched</label>
+                <select id="recent-search" onchange="fetchWeatherFromDropdown()">
+                    <option value="">Select a city</option>
+                </select>
+            </div>
         </div>
-        <div id="weather-info" class="weather-box">
-            <!-- Weather Data will be displayed here -->
-        </div>
+
+        <!-- Weather Display -->
+        <div id="weather-info" class="weather-box"></div>
+
+        <!-- 5-Day Forecast -->
         <div id="forecast" class="forecast-container hidden">
             <h2>5-Day Forecast</h2>
             <div id="forecast-cards"></div>
         </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
